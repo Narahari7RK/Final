@@ -19,6 +19,7 @@ public class Testcase1 {
 		
 		// 1. Open chrome browser
 		
+		
 		driver = new ChromeDriver();
 		
 		//2. enter the app URL

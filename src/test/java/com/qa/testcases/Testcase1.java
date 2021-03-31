@@ -16,7 +16,7 @@ public class Testcase1 {
 	@Test(priority=1)
 	public void searchPage() throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver","https://github.com/Narahari7RK/Final/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 		
 		// 1. Open chrome browser
 		

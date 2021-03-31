@@ -9,15 +9,14 @@ public class Testcase1 {
 	
 	public static WebDriver driver;
 	
-	System.setProperty("webdriver.chrome.driver","https://github.com/Narahari7RK/Final/chromedriver.exe");
-	
 	//test NG annotations to execute our test script
 	
 	//Test methods
 	
-	
 	@Test(priority=1)
 	public void searchPage() throws InterruptedException {
+		
+		System.setProperty("webdriver.chrome.driver","https://github.com/Narahari7RK/Final/chromedriver.exe");
 		
 		// 1. Open chrome browser
 		

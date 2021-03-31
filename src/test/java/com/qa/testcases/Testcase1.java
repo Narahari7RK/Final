@@ -17,6 +17,8 @@ public class Testcase1 {
 	@Test(priority=1)
 	public void searchPage() throws InterruptedException {
 		
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\narah\\eclipse-workspace\\Final\\chromedriver.exe");
+		
 		// 1. Open chrome browser
 		
 		driver = new ChromeDriver();

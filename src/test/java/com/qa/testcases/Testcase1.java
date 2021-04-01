@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
-public class Testcase2{
+public class Testcase1{
 	
 	//test NG annotations to execute our test script
 	

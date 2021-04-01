@@ -7,8 +7,6 @@ import org.testng.annotations.Test;
 
 public class Testcase1 {
 	
-	public static WebDriver driver;
-	
 	//test NG annotations to execute our test script
 	
 	//Test methods
@@ -16,10 +14,17 @@ public class Testcase1 {
 	@Test(priority=1)
 	public void searchPage() throws InterruptedException {
 		
-		// 1. Open chrome browser
+		//add the below code in the Testcase1.java file inside the searchPage() method
+
+		System.setProperty("webdriver.chrome.driver", "/home/centos/chromedriver"); 
 		
-		
-		driver = new ChromeDriver();
+		//provide the chromedriver path accordingly
+
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.addArguments("--headless");
+		chromeOptions.addArguments("--no-sandbox");
+		chromeOptions.setExperimentalOption("useAutomationExtension", false);
+		WebDriver driver = new ChromeDriver(chromeOptions);
 		
 		//2. enter the app URL
 		

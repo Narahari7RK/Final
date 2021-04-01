@@ -3,9 +3,10 @@ package com.qa.testcases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
-public class Testcase1 {
+public class Testcase2{
 	
 	//test NG annotations to execute our test script
 	
@@ -52,6 +53,16 @@ public class Testcase1 {
     
 	@Test(priority=2)
 	public void closeBrowser() {
+		
+		System.setProperty("webdriver.chrome.driver", "/home/centos/chromedriver"); 
+		
+		//provide the chromedriver path accordingly
+
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.addArguments("--headless");
+		chromeOptions.addArguments("--no-sandbox");
+		chromeOptions.setExperimentalOption("useAutomationExtension", false);
+		WebDriver driver = new ChromeDriver(chromeOptions);
 		
 		driver.close();
 	}

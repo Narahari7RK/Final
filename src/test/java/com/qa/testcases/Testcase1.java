@@ -17,7 +17,7 @@ public class Testcase1{
 		
 		//add the below code in the Testcase1.java file inside the searchPage() method
 
-		System.setProperty("webdriver.chrome.driver", "/etc/yum.repos.d/chromedriver"); 
+		System.setProperty("webdriver.chrome.driver", "/home/ec2-user/chromedriver"); 
 		
 		//provide the chromedriver path accordingly
 
@@ -54,7 +54,7 @@ public class Testcase1{
 	@Test(priority=2)
 	public void closeBrowser() {
 		
-		System.setProperty("webdriver.chrome.driver", "/etc/yum.repos.d/chromedriver"); 
+		System.setProperty("webdriver.chrome.driver", "/home/ec2-user/chromedriver"); 
 		
 		//provide the chromedriver path accordingly
 

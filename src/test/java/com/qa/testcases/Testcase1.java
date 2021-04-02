@@ -29,7 +29,7 @@ public class Testcase1{
 		
 		//2. enter the app URL
 		
-		driver.get("http://18.191.177.45:8888/");
+		driver.get("http://13.59.29.251:8888/");
 		
 		//3. find element on the web page
 		

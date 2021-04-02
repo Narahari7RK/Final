@@ -35,6 +35,8 @@ public class Testcase1{
 		
 		//XPATH = //tagname[@attribute='value'] //
 		
+		System.out.println("got driver");
+		
 		driver.findElement(By.xpath("//div[@id='about']"));
 		
 		String title = driver.getTitle();
